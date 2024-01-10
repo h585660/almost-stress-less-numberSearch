@@ -11,7 +11,7 @@ import androidx.core.app.NotificationManagerCompat;
 public class YourNoActionReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        //no button handle
+        //nei knapp, avslutter
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
         notificationManager.cancel(NOTIFICATION_ID);
     }
